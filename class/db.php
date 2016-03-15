@@ -1,7 +1,7 @@
 <?php
 //error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include("sqlite.php");
-define("URL",'http://'.$_SERVER['HTTP_HOST']."/");
+define("URL",basename(__FILE__));
 $con=new SQLite3Database("sqlite/microbilings");
 $con->connect();
 if(!headers_sent()){
