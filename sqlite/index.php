@@ -382,7 +382,7 @@ $lang = array(
 //constants 1
 define("PROJECT", "phpLiteAdmin");
 define("VERSION", "1.9.4.1");
-define("PAGE", "http://localhost:800/sqlite/");
+define("PAGE",basename(__FILE__));
 define("FORCETYPE", false); //force the extension that will be used (set to false in almost all circumstances except debugging)
 define("SYSTEMPASSWORD", $password); // Makes things easier.
 define('PROJECT_URL','http://phpliteadmin.googlecode.com');
